@@ -2,6 +2,6 @@
 
 int main(){
 
-	printf("Alternativa \"a\" está correta.");
+	printf ("%s%d%%","Juros de ",10);
 	return 0;
 }

@@ -1,0 +1,1 @@
+Alternativa "d" está correta. O printf imprime a nova linha por conta do "\n" e em seguida imprime o texto " O valor de i = " e usando "%d" o programa imprime o valor de i.

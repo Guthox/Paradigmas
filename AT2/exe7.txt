@@ -1,0 +1,21 @@
+((10>5)||(5>10))
+
+Primeiramente fazemos o parenteses, então verificamos que (10>5). Tendo que o operador || significa "ou", já podemos concluir que o resultado é verdadeiro.
+
+(!(5==6)&&(5!=6)&&((2>1)||(5<=4)))
+
+Fazemos o primeiro parenteses tendo (5==6) resultando em false.
+Ao usar a negação com o operador ! temos true.
+
+Substituindo na expressão para facilitar o entendimento obtemos:
+(true &&(5!=6)&&((2>1)||(5<=4)))
+
+Fazendo o segundo parenteses temos (5!=6) que é true
+
+(true && true &&((2>1)||(5<=4)))
+
+Fazendo o primeiro parenteses (2>1) temos verdadeiro e já que temos o operador || que significa "ou", já podemos concluir que o resultado é true.
+
+Substituindo tudo na equação:
+(true && true && true)
+Obtemos true, ou seja, verdadeiro.

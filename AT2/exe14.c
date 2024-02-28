@@ -1,7 +1,6 @@
 #include <stdio.h>
-
-int main(){
-
-	printf("Alternativa \"d\" está correta.");
-	return 0;
+main()
+{
+int i =2;
+printf ("\n O valor de i = %d ", i);
 }

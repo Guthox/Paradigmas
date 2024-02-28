@@ -1,0 +1,1 @@
+Verdadeiro. A chamada do scanf é valida, porém não foi utilizado o operador & para passar o endereço de memória para a função scanf. Isso causa que o scanf não irá guardar o valor digitado pelo usuário na variável i. Resumindo, o programa não encontrará nenhum erro para executar mas o valor que o usuário digitou não foi guardado na variável i.

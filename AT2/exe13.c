@@ -2,6 +2,8 @@
 
 int main(){
 
-	printf("Verdadeiro");
-	return 0;
+    int i;
+    scanf("%d", i);
+    printf("Valor de i: %d", i);
+    return 0;
 }

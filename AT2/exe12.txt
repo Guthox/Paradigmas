@@ -1,0 +1,1 @@
+Falso. É possível fazer comentários de varias linhas utilizando /* e */.

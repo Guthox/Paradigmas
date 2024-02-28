@@ -1,0 +1,1 @@
+Alternativa "a" está correta. O "%s" irá imprimir o texto "Juros de ", o "%d" imprime o valor 10 e o "%%" imprime o simbolo de porcentagem "%".

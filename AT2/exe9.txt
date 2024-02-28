@@ -1,0 +1,1 @@
+Falso. A linguagem C é case-sensitive, ou seja, há diferença entre letras maiúsculas e minúsculas.
