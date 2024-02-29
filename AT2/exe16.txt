@@ -1,0 +1,15 @@
+a=1, b=2, c=3, d=4
+
+b += a + c;
+
+Primeiro soma a com c, obtendo 4, após isso somamos esse valor com o valor de b, ou seja, 4 + 2, resultando em 6 e atribui na variavel b.
+
+b *= d = c + 20;
+
+Primeiro soma c com 20, obtendo 23, após isso atribui esse valor na variável d. Após isso multiplique o valor de b com o valor de d, ou seja, 23 * 2 obtendo 46 e atribuindo esse valor a variável b.
+
+a += b += c += 5;
+Primeiro somar 5 com c obtendo 8 e atribuindo a c. Somar o valor de b com o valor de c, ou seja, 2+8, obtendo 10 e atribuindo a variável b. Após isso, somar b com a, ou seja, 10+1, obtendo 11 e atribuindo a varável a.
+
+a == b
+A variável a é diferente de b, então retorna false.

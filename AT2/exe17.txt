@@ -1,0 +1,6 @@
+Primeiramente o programa não irá exibir nenhuma saida pois não tem a função main e não inclui o stdio.h para poder utilizar a função printf.
+Caso esse problema seja corrigido, o programa irá exibir o valor de -7.
+Primeiro o programa irá atribuir o valor de b em a e depois incrementar b, obtendo a = 5 e b = 6.
+No if há apenas um sinal de igual, fazendo com que a variável receba o valor de b, tendo a = 6 e b = 6. Já que o valor da variável a é diferente de 0, o programa interpreta isso como verdadeiro e segue para a instrução dentro do bloco condicional que contém apenas uma instrução já que as chaves foram omitidas.
+Aqui somamos 1 e a, obtendo 7 e somamos ao valor de b, obtendo 13 e atribuimos a variável b.
+Por fim, imprime na tela o resultado de a - b, sendo 6 - 13, e assim obtendo o valor -7.
