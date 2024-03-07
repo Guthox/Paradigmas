@@ -7,6 +7,7 @@
 void criarMatriz(int ***matriz);
 void preencherMatriz(int ***matriz);
 void printarMatriz(int ***matriz);
+void liberarMemoria(int **matriz);
 
 int main(){
 
@@ -35,9 +36,9 @@ int main(){
     printf("#################\n");
     printarMatriz(&matrizC);
 
-    free(mat);
-    free(matrizA);
-    free(matrizC);
+    liberarMemoria(mat);
+    liberarMemoria(matrizA);
+    liberarMemoria(matrizC);
 
     return 0;
 }
@@ -63,4 +64,11 @@ void printarMatriz(int ***matriz){
             printf("%d\t", (*matriz)[i][j]);
         printf("\n");
     }
+}
+
+void liberarMemoria(int **matriz){
+    for (int i = 0; i < LINHAS; i++){
+        free(matriz[i]);
+    }
+    free(matriz);
 }
