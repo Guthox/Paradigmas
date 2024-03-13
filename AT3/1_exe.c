@@ -9,6 +9,7 @@ int v3[10] = { 1,8,4,5,9,7,6,3,2,0 };
 void media(int v[], int n);
 void mediana(int v[], int n);
 void ordenar(int v[], int n);
+void printarVetor(int v[], int n);
 
 int main()
 {
@@ -16,28 +17,63 @@ int main()
 	cout << "Deseja digitar os valores manualmente? S ou N" << endl;
 	cin >> op;
 	op = toupper(op);
+	int elemento;
+	int tamanho1 = 13;
+	int tamanho2 = 11;
+	int tamanho3 = 10;
 	if (op == 'S'){
+		tamanho1 = 10;
+		tamanho2 = 10;
+		tamanho3 = 10;
 		// Digita o vetor manualmente
-		cout << "ok\n";
+		for (int i = 1; i <= 3; i++){
+			for (int j = 0; j < 10; j++){
+				printf("Digite o elemento %d do vetor %d: ", j, i);
+				scanf("%d", &elemento);
+				if (i == 1){
+					v1[j] = elemento;
+				}
+				else if (i == 2){
+					v2[j] = elemento;
+				}
+				else{
+					v3[j] = elemento;
+				}
+			}
+		}
 	}
 	
+	cout << "Vetor 1: ";
+	printarVetor(v1, tamanho1);
     cout << "\nModa do vetor 1" << endl;
-    moda(v1, 13);
-	media(v1, 13);
-	mediana(v1, 13);
+    moda(v1, tamanho1);
+	media(v1, tamanho1);
+	mediana(v1, tamanho1);
+	cout << "##############################\n";
 
+	cout << "Vetor 2: ";
+	printarVetor(v2, tamanho2);
     cout << "\nModa do vetor 2" << endl;
-    moda(v2, 11);
-	media(v2, 11);
-	mediana(v2, 11);	
+    moda(v2, tamanho2);
+	media(v2, tamanho2);
+	mediana(v2, tamanho2);	
+	cout << "##############################\n";
 
+	cout << "Vetor 3: ";
+	printarVetor(v3, tamanho3);
     cout << "\nModa do vetor 3" << endl;
-    moda(v3, 10);
-	media(v3, 10);
-	mediana(v3, 10);
+    moda(v3, tamanho3);
+	media(v3, tamanho3);
+	mediana(v3, tamanho3);
 
     system("Pause"); //se preferir coloque este comando em comentario
     return 0;
+}
+
+void printarVetor(int v[], int n){
+	for (int i = 0; i < n; i++){
+		cout << v[i] << " ";
+	}
 }
 
 void mediana(int v[], int n){
